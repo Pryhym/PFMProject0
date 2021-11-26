@@ -11,7 +11,9 @@
 #include <JuceHeader.h>
 
 //==============================================================================
-/**
+/**TODO:
+* 
+* should we play a sound?
 */
 class PFMProject0AudioProcessor  : public juce::AudioProcessor
 {
@@ -54,6 +56,7 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
+    bool shouldPlaySound = true;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (PFMProject0AudioProcessor)
 };
